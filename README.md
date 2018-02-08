@@ -36,15 +36,13 @@ Analysis pipeline for GGMP-Regional variations
 4 Direction for use    
     4.1 Configuring the system environment files and variables    
     4.2 Location of the files    
-    4.3 modify Relate_metadata_with_microbiota.pl     
-    4.4 Run pipeline
+    4.3 Run pipeline
 
 5 How to get the data?   
     6.1 How to get the original sequences?   
     
 
 # 1 Environment
-
 ## 1.1 System
 -------------------------------------------------------
 ### 1.1.1 System Platform
@@ -60,7 +58,6 @@ Analysis pipeline for GGMP-Regional variations
             RAM:      >10G
       Hard disk:      >2T
 --------------------------------------------------------
-
 ## 1.2 Qiime
 --------------------------------------------------------
 ### 1.2.1 Qiime version
@@ -144,7 +141,6 @@ Analysis pipeline for GGMP-Regional variations
 --------------------------------------------------------
 
 # 2 Data
-
 --------------------------------------------------------
 ## 2.1 original sequences
 --------------------------------------------------------
@@ -226,22 +222,14 @@ Analysis pipeline for GGMP-Regional variations
 --------------------------------------------------------
        Configuring the system environment files and variables based on the (1) Environment
 --------------------------------------------------------
-
 ## 4.2 Location of the files
 --------------------------------------------------------
       put the scripts, bbmap folder and supplementary files in the same path
       put all fastq files in the same path
 --------------------------------------------------------
-
-## 4.3 modify Relate_metadata_with_microbiota.pl 
+## 4.3 Run pipeline
 --------------------------------------------------------
-    line 39:   get the path of 97_otus.fasta, such as /usr/local/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
-    line 51:   get the path of 97_otus.fasta, such as /usr/local/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
---------------------------------------------------------
-
-## 4.4 Run pipeline
---------------------------------------------------------
-### 4.4.1 Preprocessing: From raw sequences to BIOM
+### 4.3.1 Preprocessing: From raw sequences to BIOM
 -------------------------------------------------------- 
      perl Preprocessing.pl <fq_dir> <metadata.list> <threads> <output_dir> 
      <fq_dir>: Path to the folder containing all fastq files.
