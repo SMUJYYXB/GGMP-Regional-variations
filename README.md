@@ -39,7 +39,7 @@ Analysis pipeline for GGMP-Regional variations
     4.3 Run pipeline
 
 5 How to get the data?   
-    6.1 How to get the original sequences?   
+    5.1 How to get the original sequences?   
     
 
 # 1 Environment
